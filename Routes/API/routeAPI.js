@@ -4,8 +4,6 @@ const router = express.Router();
 
 const fs = require(`fs`);
 
-const idFilter = req => member => member.id === parseInt(req.params.id);
-
 //POST ROUTE//
 //The following API routes should be created:
 
@@ -38,10 +36,14 @@ router.post("/api/notes", (request, response) => {
 
 //DELETE /api/notes/:id - Should receive a query parameter containing the id of a note to delete. This means you'll need to find a way to give each note a unique id when it's saved. In order to delete a note, you'll need to read all notes from the db.json file, remove the note with the given id property, and then rewrite the notes to the db.json file.
 router.delete("/api/notes/:id", (request, response) => {
-    db.splice(request.params.id);
-    response.json(db);
-    response.send({ type: `DELETE` });
-    console.log(request.params.id);
+    let dbArray = db.filter((note) => {
+        return note.id !== request.params.id
+    });
+    console.log(db, dbArray);
+    //response.json({ dataArray: dbArray });
+    fs.writeFileSync("db/db.json", JSON.stringify(savedNotes));
+    response.end();
+    throw (err)
 });
 
 module.exports = router;
