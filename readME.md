@@ -43,7 +43,8 @@ You are required to submit the following:
 * The URL of the GitHub repository
 
 ## Screenshot- 
-![alt text](https://github.com/DarkDave1185/portfolioTemplate/blob/master/screens/screen1.jpg "indexScreen")
+![alt text](https://github.com/DarkDave1185/noteTaker/blob/master/noteTaker_screen.JPG "indexScreen")
+![alt text](https://github.com/DarkDave1185/noteTaker/blob/master/noteTaker_screen2.JPG "notesScreen")
 
 ## Deployment Link- 
 https://github.com/DarkDave1185/noteTaker
