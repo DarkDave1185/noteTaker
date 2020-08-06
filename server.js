@@ -22,5 +22,5 @@ app.use(routeHTML);
 
 
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => console.log(`SERVER STARTED ON ${PORT}`));
