@@ -47,4 +47,4 @@ You are required to submit the following:
 ![alt text](https://github.com/DarkDave1185/noteTaker/blob/master/noteTaker_screen2.JPG "notesScreen")
 
 ## Deployment Link- 
-https://github.com/DarkDave1185/noteTaker
+https://darkdave1185.github.io/noteTaker/
